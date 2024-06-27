@@ -1,0 +1,12 @@
+{
+  "name": "projetobanco",
+  "version": "1.0.0",
+  "description": "Projeto de um banco para clientes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giovanni",
+  "license": "ISC",
+  "type": "module"
+}
