@@ -1,14 +1,14 @@
 export class Conta {
 
     constructor(saldoInicial, cliente, agencia) {
+
+        if (this.constructor == Conta) {
+            throw new Error("You can't do this because Conta is a abstract class ")
+        }
+
         this._saldo = saldoInicial
         this._cliente = cliente
         this._agencia = agencia
-
-        if (this.constructor ==  Conta){
-            console.log("Nao eh possivel criar esta conta ")
-            
-        }
     }
 
 
@@ -28,13 +28,15 @@ export class Conta {
         return this._saldo
     }
 
+    sacar(){
+        throw new Error ("O metodo sacar da classe conta eh abstrato")
+    }
 
-
-    sacar(valor) {
-
-        if (this._saldo >= valor) {
-            this._saldo -= valor
-            return valor
+    logicaSacar(valor, taxa) {
+        const valorSacado = taxa * valor
+        if (this._saldo >= valorSacado) {
+            this._saldo -= valorSacado
+            return valorSacado
         }
     }
 
