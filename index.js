@@ -1,20 +1,10 @@
-import { ContaCorrente } from "./contas/ContaCorrente.js"
-import { Cliente } from "./contas/Cliente.js"
-import { ContaPoupanca } from "./contas/ContaPoupança.js";
-import { Conta } from "./contas/Conta.js";
+import { Diretor } from "./funcionarios/Diretor.js"
+import { Gerente } from "./funcionarios/Gerente.js"
 
+const diretor = new Diretor(Patricia, 10.000, 765432)
+const gerente = new Gerente(Beto, 5.000, 1234567)
 
-//Contas
-const cliente1 = new Cliente("Gigio", 6666666)
+const estaLogado = SistemaDeAutenticacao.login(diretor, "123")
 
-const cliente2 = new Cliente("Leo", 99999999)
+console.log(estaLogado)
 
-//Contas Correntes e poupancas
-const contaSalario = new ContaCorrente(cliente1, 1001)
-const contaPoupanca1 = new ContaPoupanca(0, cliente1, 1001)
-const  contaSalario1 = new ContaPoupanca(0, cliente1, 1001)
-
-contaSalario1.depositar(100)
-contaSalario1.sacar(50)
-
-console.log(contaSalario1)
