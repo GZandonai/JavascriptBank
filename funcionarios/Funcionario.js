@@ -6,15 +6,15 @@ export class Funcionario {
         this.cpf = cpf
 
         this.bonificacao = 1
-        this.senha
+        this._senha
     }
 
-    get senha (){
-        return this.senha
+    autenticar(senha){
+        return senha == this._senha
     }
 
     cadastrarSenha(senha){
-        this.senha = senha
+        this._senha = senha
     }
 
 }
