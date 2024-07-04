@@ -1,7 +1,7 @@
-import { ContaCorrente } from "./classes/ContaCorrente.js"
-import { Cliente } from "./classes/Cliente.js"
-import { ContaPoupanca } from "./classes/ContaPoupança.js";
-import { Conta } from "./classes/Conta.js";
+import { ContaCorrente } from "./contas/ContaCorrente.js"
+import { Cliente } from "./contas/Cliente.js"
+import { ContaPoupanca } from "./contas/ContaPoupança.js";
+import { Conta } from "./contas/Conta.js";
 
 
 //Contas
