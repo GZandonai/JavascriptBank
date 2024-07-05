@@ -9,7 +9,7 @@ export class Funcionario {
         this._senha
     }
 
-    autenticar(senha){
+    autenticar(senha){                
         return senha == this._senha
     }
 
